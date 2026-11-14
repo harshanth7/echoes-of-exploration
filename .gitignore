@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+*.local
+.vite
+.eslintcache
+public/textures/_probe.bin
+.env
+.env.*
+!.env.example
