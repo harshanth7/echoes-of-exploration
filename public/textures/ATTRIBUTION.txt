@@ -1,0 +1,23 @@
+Planetary surface maps used by the landing page.
+These files are NASA public-domain imagery. They are not generated stand-ins.
+
+Moon color — moon.jpg
+NASA Scientific Visualization Studio, CGI Moon Kit (2025 color map, 2048×1024).
+Assembled from Lunar Reconnaissance Orbiter Camera (LROC) Wide Angle Camera data,
+with polar regions filled from LRO laser altimeter albedo.
+https://svs.gsfc.nasa.gov/4720/
+Direct file: https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg
+
+Moon elevation — moon-bump.jpg
+NASA SVS / LRO LOLA elevation map, 8-bit preview (1024×512), used as a bump map.
+https://svs.gsfc.nasa.gov/4720/
+Direct file: https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/ldem_3_8bit.jpg
+
+Mars color — mars.jpg
+NASA/JPL-Caltech Viking imagery processed at the USGS (1440×720 equirectangular).
+From NASA 3D Resources.
+https://science.nasa.gov/3d-resources/mars/
+Direct file: https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/image/mars/Mars.jpg
+
+If a file fails to load, the scene replaces that map with a procedural canvas texture.
+Procedural textures are generated in the browser and are not NASA imagery.
