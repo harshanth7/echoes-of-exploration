@@ -90,7 +90,7 @@ export function MarsSection({ onBackToOverview }) {
                       {machine.year}
                     </span>
                     <span className="px-2.5 py-0.5 rounded-full bg-orange-950/80 backdrop-blur-md border border-orange-400/40 text-[10px] font-mono tracking-wider text-orange-300 uppercase flex items-center gap-1 shadow-[0_0_10px_rgba(255,107,74,0.2)]">
-                      <span>🔮</span>
+                      
                       <span>3D SCANNER + QUIZ</span>
                     </span>
                   </div>
@@ -177,7 +177,7 @@ export function MarsSection({ onBackToOverview }) {
 
       {/* Bottom Info Bar */}
       <div className="pt-4 mt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-slate-400 gap-2">
-        <span>Click any rover card to open storytelling chapters, 3D model, and student quiz</span>
+        <span>Click any rover card to open storytelling chapters, 3D model, and quiz</span>
         <span className="text-slate-500">Official NASA / JPL Historical Archives & Authentic Imagery</span>
       </div>
     </div>

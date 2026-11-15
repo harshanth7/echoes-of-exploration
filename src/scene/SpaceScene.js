@@ -177,13 +177,17 @@ export class SpaceScene {
 
   setupLighting() {
     // True deep-space ambient light: extremely subtle to preserve pitch-black space contrast
-    this.ambientLight = new THREE.AmbientLight(0x0a101d, 0.35)
+    this.ambientLight = new THREE.AmbientLight(0x0a101d, 0.30) // Slightly dimmer ambient
     this.scene.add(this.ambientLight)
 
     // Primary Solar Directional Light:
     // Placed at a dramatic side-grazing celestial angle (right and slightly forward)
     // This creates an authentic terminator line showing crater bowls and mountain ridges in true 3D relief!
-    this.sunLight = new THREE.DirectionalLight(0xfffbf2, 3.6)
+    this.sunLight = new THREE.DirectionalLight(0xfffbf2, 4.2) // Brighter sun for realistic terminator
+    // Add subtle rim light to illuminate Moon’s night side
+    this.rimLight = new THREE.DirectionalLight(0xffffff, 0.45);
+    this.rimLight.position.set(-22, -6, -12);
+    this.scene.add(this.rimLight);
     this.sunLight.position.set(22, 6, 12)
     this.scene.add(this.sunLight)
 
@@ -411,8 +415,8 @@ export class SpaceScene {
 
     const geometry = new THREE.SphereGeometry(this.marsRadius, 128, 128)
     const material = new THREE.MeshStandardMaterial({
-      roughness: 0.88,
-      metalness: 0.02,
+      roughness: 0.75,
+      metalness: 0.03,
     })
 
     this.marsMesh = new THREE.Mesh(geometry, material)
@@ -429,14 +433,7 @@ export class SpaceScene {
         material.needsUpdate = true
       })
 
-    // Surface bump map for Martian craters, volcanoes, and canyon relief
-    loadCachedTexture('/textures/moon-bump.jpg', 'bump')
-      .then((bumpTex) => {
-        material.bumpMap = bumpTex
-        material.bumpScale = 0.045
-        material.needsUpdate = true
-      })
-      .catch(() => {})
+    // Surface bump map temporarily disabled – replace with proper Mars bump texture when available
 
     this.marsGroup.add(this.marsMesh)
 
@@ -490,7 +487,7 @@ export class SpaceScene {
       this.marsGroup.position.set(0, -4.0, -3.0)
     } else {
       // Deep space background position: separated from Moon with rich perspective depth (z = -3.8)
-      this.marsGroup.position.set(5.9, -2.5, -3.8)
+      this.marsGroup.position.set(8.0, -2.5, -4.0) // Move Mars farther back and right for separation
     }
   }
 

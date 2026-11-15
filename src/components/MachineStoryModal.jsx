@@ -104,7 +104,7 @@ export function MachineStoryModal({ machine, onClose }) {
                   : 'text-slate-400 hover:text-white border border-transparent hover:bg-white/5'
               }`}
             >
-              <span>📖</span>
+              
               <span>MISSION STORY</span>
             </button>
 
@@ -116,7 +116,7 @@ export function MachineStoryModal({ machine, onClose }) {
                   : 'text-slate-400 hover:text-white border border-transparent hover:bg-white/5'
               }`}
             >
-              <span>🔮</span>
+               
               <span>3D MODEL EXPLORER</span>
             </button>
 
@@ -438,7 +438,7 @@ export function MachineStoryModal({ machine, onClose }) {
                 onClick={() => setActiveTab('3d')}
                 className="w-full sm:w-auto px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-mono text-xs tracking-wider uppercase transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>🔮</span>
+                
                 <span>EXPLORE 3D MODEL</span>
                 <span>→</span>
               </button>
@@ -449,7 +449,7 @@ export function MachineStoryModal({ machine, onClose }) {
                 style={{ fontFamily: "'Rajdhani', sans-serif" }}
               >
                 <span>🎯</span>
-                <span>TAKE STUDENT QUIZ (5 QUESTIONS)</span>
+                <span>TAKE STUDENT QUIZ</span>
                 <span>→</span>
               </button>
             </div>

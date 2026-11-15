@@ -142,7 +142,7 @@ export function LandingExperience() {
                     ? 'bg-white/20 text-white shadow-[0_0_12px_rgba(255,255,255,0.2)] border border-white/25 font-semibold'
                     : 'text-slate-400 hover:text-white border border-transparent hover:bg-white/[0.04]'
                 }`}
-                style={{ fontFamily: "'Rajdhani', 'Space Grotesk', sans-serif" }}
+                style={{ fontFamily: "'Orbitron', 'Rajdhani', 'Space Grotesk', sans-serif" }}
               >
                 {tab.label}
               </button>
@@ -194,7 +194,7 @@ export function LandingExperience() {
                 {/* Subtitle: THE MACHINES NASA LEFT BEHIND (Kept as requested) */}
                 <h2
                   className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-base font-medium tracking-[0.34em] sm:tracking-[0.42em] uppercase text-cyan-100/90 flex items-center gap-3 drop-shadow-[0_0_12px_rgba(126,235,255,0.25)]"
-                  style={{ fontFamily: "'Rajdhani', 'Space Grotesk', sans-serif" }}
+                  style={{ fontFamily: "'Orbitron', 'Rajdhani', 'Space Grotesk', sans-serif" }}
                 >
                   <span className="w-6 sm:w-10 h-[1px] bg-cyan-400/60" />
                   THE MACHINES NASA LEFT BEHIND
@@ -204,7 +204,7 @@ export function LandingExperience() {
                 <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-3.5">
                   <button
                     onClick={() => setSelectedPlanet('moon')}
-                    className="px-6 py-3 bg-[#e63926] hover:bg-[#ff4530] text-white font-bold text-xs tracking-[0.25em] uppercase rounded-[3px] shadow-[0_0_25px_rgba(230,57,38,0.45)] transition-all flex items-center gap-2 cursor-pointer border-none"
+                    className="hidden px-6 py-3 bg-[#e63926] hover:bg-[#ff4530] text-white font-bold text-xs tracking-[0.25em] uppercase rounded-[3px] shadow-[0_0_25px_rgba(230,57,38,0.45)] transition-all flex items-center gap-2 cursor-pointer border-none"
                     style={{ fontFamily: "'Rajdhani', sans-serif" }}
                   >
                     <span>EXPLORE MOON MACHINES</span>
@@ -213,7 +213,7 @@ export function LandingExperience() {
 
                   <button
                     onClick={() => setSelectedPlanet('mars')}
-                    className="px-6 py-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-xs tracking-[0.25em] uppercase rounded-[3px] shadow-[0_0_25px_rgba(234,88,12,0.45)] transition-all flex items-center gap-2 cursor-pointer border-none"
+                    className="hidden px-6 py-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white font-bold text-xs tracking-[0.25em] uppercase rounded-[3px] shadow-[0_0_25px_rgba(234,88,12,0.45)] transition-all flex items-center gap-2 cursor-pointer border-none"
                     style={{ fontFamily: "'Rajdhani', sans-serif" }}
                   >
                     <span>EXPLORE MARS ROVERS</span>
@@ -363,7 +363,7 @@ export function LandingExperience() {
             className="text-[10px] text-slate-400/80 tracking-[0.25em] uppercase"
             style={{ fontFamily: "'Rajdhani', 'Space Grotesk', sans-serif" }}
           >
-            <span>DRAG CANVAS TO PARALLAX</span>
+            
             <span className="text-white/30 mx-2">•</span>
             <span>CLICK PLANET TO FOCUS</span>
           </div>
